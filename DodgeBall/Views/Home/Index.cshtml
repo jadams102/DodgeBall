@@ -1,5 +1,28 @@
-﻿<h1>Portland DodgeBall League</h1>
+﻿<h1 class="text-center">Portland DodgeBall League</h1>
 
-<p>@Html.ActionLink("Division", "Index", "Divisions")</p>
-<p>@Html.ActionLink("Teams", "Index", "Teams")</p>
-<p>@Html.ActionLink("Player Roster", "Index", "Players")</p>
+<div class="row text-center">
+    <div class="col-md-4">
+        <div class="row">
+            <img src="~/images/division.png" />
+        </div>
+        <div class="row text-center">
+        <h2 class="btn btn-info btn-lg yo">@Html.ActionLink("Division", "Index", "Divisions")</h2>
+            </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <img src="~/images/team.png" />
+        </div>
+        <div class="row text-center">
+        <h2 class="btn btn-warning btn-lg yo">@Html.ActionLink("Teams", "Index", "Teams")</h2>
+        </div>
+    </div>
+<div class="col-md-4">
+    <div class="row">
+        <img src="~/images/player.png" />
+    </div>
+    <div class="row text-center">
+    <h2 class="btn btn-danger btn-lg yo">@Html.ActionLink("Player Roster", "Index", "Players")</h2>
+        </div>
+</div>
+</div>
